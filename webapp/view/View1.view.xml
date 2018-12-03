@@ -3,6 +3,13 @@
 	<App id="idAppControl">
 		<pages>
 			<Page title="{i18n>title}">
+				<!--<customHeader>-->
+				<!--	<Toolbar>-->
+				<!--		<content>-->
+				<!--			<Title id="meuTitulo" text="XXXXXXXX" />-->
+				<!--		</content>-->
+				<!--	</Toolbar>-->
+				<!--</customHeader>-->
 				<content>
 					<ComboBox selectedKey="US">
 						<items>
@@ -20,10 +27,26 @@
 					</Select>
 				</content>
 				<footer>
-					<!---- sap.m.IBar --->
-					<Toolbar>
-						
-					</Toolbar>
+					<!--sap.m.IBar-->
+					<!--<Toolbar>-->
+					<!--<content>-->
+					<!--		<ToolbarSpacer />-->
+					<!--		<Button text="Aprovar" type="Accept" />-->
+					<!--		<Button text="Rejeitar" type="Reject" />-->
+					<!--		<Button text="Salvar" type="Emphasized" />-->
+					<!--</content>-->
+					<!--</Toolbar>-->
+					<Bar>
+						<contentLeft>
+							<Button text="Rejeitar" type="Reject"/>
+						</contentLeft>
+						<contentMiddle>
+							<Button text="Salvar" type="Emphasized"/>
+						</contentMiddle>
+						<contentRight>
+							<Button text="Aprovar" type="Accept"/>
+						</contentRight>
+					</Bar>
 				</footer>
 			</Page>
 		</pages>
